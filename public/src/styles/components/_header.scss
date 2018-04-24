@@ -1,0 +1,29 @@
+//$m-size for small devices and $xl-size for larger devices
+
+.header {
+    background: $off-black;
+    //background: #20222b;
+    color: white;
+    margin-bottom: $m-size;
+    padding: $m-size 0;
+}
+
+//BEM Block Element Modifier (way to simplify a class name) block is a header element to target in this case title
+.header__title {
+    font-size: $l-size;
+    margin: 0;
+}
+
+.header__subtitle {
+    color: $off-white;
+    //color: #a5afd7; 
+    font-size: $m-size;
+    font-weight: 500;
+    margin: 0;
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .header { 
+        margin-bottom: $xl-size;
+    }
+}
